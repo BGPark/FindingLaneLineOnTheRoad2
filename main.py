@@ -42,7 +42,7 @@ def proc_pipe(image):
     lane_shape_mixed = weighted_img(warped, lane_shape, α=0.4)
 
     # Calculate Car Position from Center
-    position = (left_fitx[0] + right_fitx[0])//2
+    position = (left_fitx[-1] + right_fitx[-1])//2
     to_the_left_from_center = (640 - position) * 3.7 / 650
 
     # Calculate curverad
