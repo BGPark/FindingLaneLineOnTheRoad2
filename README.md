@@ -94,7 +94,9 @@ Since I have windows with the center of the image estimated to be lane, I use th
 * And these coefficients were calculated by averaging 6/25 second. This leads to more stable line changes. [(code)](https://github.com/BGPark/FindingLaneLineOnTheRoad2/blob/master/utils.py#L248)
 
 * you can watch full video
-[Youtube Link](https://youtu.be/SuRDDikw5PQ) or [movie file](output_images/project_video.mp4)
+[Youtube Link](https://youtu.be/ofqOy-YYQ04) or [movie file](output_images/project_video.mp4)
 
 ### Conclusion
-Finding a lane based on video has many challenging elements. The factors that occur as the environment changes are as follows. There is shadow by neighboring buildings and other vehicles. In addition, the weather's cloudiness and cloudiness, as well as the seasonal and time-varying sun altitudes, will also have an impact. Sometimes road pavement looks like a lane split, and paint that shows the lane may have been stripped off. It is no exaggeration to say that the performance of the image filter is directly related to the final performance. But I want to finish this with this project to challenge something that can accommodate all of the above environmental conditions.
+* Finding a lane based on video has many challenging elements. The factors that occur as the environment changes are as follows. There is shadow by neighboring buildings and other vehicles. In addition, the weather's cloudiness and cloudiness, as well as the seasonal and time-varying sun altitudes, will also have an impact. Sometimes road pavement looks like a lane split, and paint that shows the lane may have been stripped off. It is no exaggeration to say that the performance of the image filter is directly related to the final performance.
+* I am going to start learning in two areas to improve this. First, I think that the idea of ["Real-time Lane Detection on Suburban Streets using Visual Cue Integration"](http://cdn.intechopen.com/pdfs/46518.pdf) can be obtained as a way to improve filter performance.
+  Second, I would like to construct a CNN network that can track the lane after implementing it by referring to papers such as ["Learning Multi-Domain Convolutional Neural Networks for Visual Tracking"](http://cvlab.postech.ac.kr/research/mdnet/) to provide continuous images in terms of image characteristics.
